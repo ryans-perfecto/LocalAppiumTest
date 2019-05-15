@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="1" passed="0" failed="0" skipped="1">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2019-05-14T16:23:37Z" name="Default suite" finished-at="2019-05-14T16:23:37Z" duration-ms="25">
+    <groups>
+    </groups>
+    <test started-at="2019-05-14T16:23:37Z" name="Default test" finished-at="2019-05-14T16:23:37Z" duration-ms="25">
+      <class name="AppiumTest">
+        <test-method is-config="true" signature="setupAppium()[pri:0, instance:AppiumTest@6236eb5f]" started-at="2019-05-14T16:21:27Z" name="setupAppium" finished-at="2019-05-14T16:23:37Z" duration-ms="129679" status="FAIL">
+          <exception class="org.openqa.selenium.WebDriverException">
+            <message>
+              <![CDATA[It is impossible to create a new session because 'createSession' which takes HttpClient, InputStream and long was not found or it is not accessible
+Build info: version: '3.12.0', revision: '7c6e0b3', time: '2018-05-08T14:04:26.12Z'
+System info: host: 'Matts-Macbook-Pro.local', ip: 'fe80:0:0:0:1d:9119:57ce:a63f%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.14.4', java.version: '10.0.2'
+Driver info: driver.version: IOSDriver]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.WebDriverException: It is impossible to create a new session because 'createSession' which takes HttpClient, InputStream and long was not found or it is not accessible
+Build info: version: '3.12.0', revision: '7c6e0b3', time: '2018-05-08T14:04:26.12Z'
+System info: host: 'Matts-Macbook-Pro.local', ip: 'fe80:0:0:0:1d:9119:57ce:a63f%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.14.4', java.version: '10.0.2'
+Driver info: driver.version: IOSDriver
+at io.appium.java_client.remote.AppiumCommandExecutor$1.createSession(AppiumCommandExecutor.java:195)
+at io.appium.java_client.remote.AppiumCommandExecutor.createSession(AppiumCommandExecutor.java:209)
+at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:231)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:42)
+at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
+at io.appium.java_client.ios.IOSDriver.execute(IOSDriver.java:1)
+at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:207)
+at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:130)
+at io.appium.java_client.DefaultGenericMobileDriver.<init>(DefaultGenericMobileDriver.java:38)
+at io.appium.java_client.AppiumDriver.<init>(AppiumDriver.java:84)
+at io.appium.java_client.AppiumDriver.<init>(AppiumDriver.java:94)
+at io.appium.java_client.ios.IOSDriver.<init>(IOSDriver.java:95)
+at AppiumTest.setupAppium(AppiumTest.java:56)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:59)
+at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:458)
+at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:222)
+at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:142)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:401)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+Caused by: java.lang.reflect.InvocationTargetException
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+at io.appium.java_client.remote.AppiumCommandExecutor$1.createSession(AppiumCommandExecutor.java:185)
+... 33 more
+Caused by: org.openqa.selenium.WebDriverException: An unknown server-side error occurred while processing the command. Original error: Could not install app: 'Command 'ios-deploy --id d1ca87cd071d01b631cc2d8105b676e05b1d16b2 --bundle /var/folders/jr/dqvctkx52ml_5f59dqvb3tpw0000gp/T/2019414-10150-25kuck.8vpfc/TheApp.app' exited with code 253'
+Build info: version: '3.12.0', revision: '7c6e0b3', time: '2018-05-08T14:04:26.12Z'
+System info: host: 'Matts-Macbook-Pro.local', ip: 'fe80:0:0:0:1d:9119:57ce:a63f%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.14.4', java.version: '10.0.2'
+Driver info: driver.version: IOSDriver
+remote stacktrace: UnknownError: An unknown server-side error occurred while processing the command. Original error: Could not install app: 'Command 'ios-deploy --id d1ca87cd071d01b631cc2d8105b676e05b1d16b2 --bundle /var/folders/jr/dqvctkx52ml_5f59dqvb3tpw0000gp/T/2019414-10150-25kuck.8vpfc/TheApp.app' exited with code 253'
+    at getResponseForW3CError (/Applications/Appium.app/Contents/Resources/app/node_modules/appium-base-driver/lib/protocol/errors.js:826:9)
+    at asyncHandler (/Applications/Appium.app/Contents/Resources/app/node_modules/appium-base-driver/lib/protocol/protocol.js:450:37)
+    at process._tickCallback (internal/process/next_tick.js:68:7)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:488)
+at org.openqa.selenium.remote.W3CHandshakeResponse.lambda$new$0(W3CHandshakeResponse.java:57)
+at org.openqa.selenium.remote.W3CHandshakeResponse.lambda$getResponseFunction$2(W3CHandshakeResponse.java:104)
+at org.openqa.selenium.remote.ProtocolHandshake.lambda$createSession$0(ProtocolHandshake.java:123)
+at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:195)
+at java.base/java.util.Spliterators$ArraySpliterator.tryAdvance(Spliterators.java:958)
+at java.base/java.util.stream.ReferencePipeline.forEachWithCancel(ReferencePipeline.java:127)
+at java.base/java.util.stream.AbstractPipeline.copyIntoWithCancel(AbstractPipeline.java:502)
+at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:488)
+at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:474)
+at java.base/java.util.stream.FindOps$FindOp.evaluateSequential(FindOps.java:150)
+at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+at java.base/java.util.stream.ReferencePipeline.findFirst(ReferencePipeline.java:543)
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:126)
+... 38 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.WebDriverException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setupAppium -->
+        <test-method signature="myTest()[pri:0, instance:AppiumTest@6236eb5f]" started-at="2019-05-14T16:23:37Z" name="myTest" finished-at="2019-05-14T16:23:37Z" duration-ms="0" status="SKIP">
+          <exception class="org.openqa.selenium.WebDriverException">
+            <message>
+              <![CDATA[It is impossible to create a new session because 'createSession' which takes HttpClient, InputStream and long was not found or it is not accessible
+Build info: version: '3.12.0', revision: '7c6e0b3', time: '2018-05-08T14:04:26.12Z'
+System info: host: 'Matts-Macbook-Pro.local', ip: 'fe80:0:0:0:1d:9119:57ce:a63f%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.14.4', java.version: '10.0.2'
+Driver info: driver.version: IOSDriver]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.WebDriverException: It is impossible to create a new session because 'createSession' which takes HttpClient, InputStream and long was not found or it is not accessible
+Build info: version: '3.12.0', revision: '7c6e0b3', time: '2018-05-08T14:04:26.12Z'
+System info: host: 'Matts-Macbook-Pro.local', ip: 'fe80:0:0:0:1d:9119:57ce:a63f%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.14.4', java.version: '10.0.2'
+Driver info: driver.version: IOSDriver
+at io.appium.java_client.remote.AppiumCommandExecutor$1.createSession(AppiumCommandExecutor.java:195)
+at io.appium.java_client.remote.AppiumCommandExecutor.createSession(AppiumCommandExecutor.java:209)
+at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:231)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:42)
+at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
+at io.appium.java_client.ios.IOSDriver.execute(IOSDriver.java:1)
+at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:207)
+at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:130)
+at io.appium.java_client.DefaultGenericMobileDriver.<init>(DefaultGenericMobileDriver.java:38)
+at io.appium.java_client.AppiumDriver.<init>(AppiumDriver.java:84)
+at io.appium.java_client.AppiumDriver.<init>(AppiumDriver.java:94)
+at io.appium.java_client.ios.IOSDriver.<init>(IOSDriver.java:95)
+at AppiumTest.setupAppium(AppiumTest.java:56)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:59)
+at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:458)
+at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:222)
+at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:142)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:401)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+Caused by: java.lang.reflect.InvocationTargetException
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+at io.appium.java_client.remote.AppiumCommandExecutor$1.createSession(AppiumCommandExecutor.java:185)
+... 33 more
+Caused by: org.openqa.selenium.WebDriverException: An unknown server-side error occurred while processing the command. Original error: Could not install app: 'Command 'ios-deploy --id d1ca87cd071d01b631cc2d8105b676e05b1d16b2 --bundle /var/folders/jr/dqvctkx52ml_5f59dqvb3tpw0000gp/T/2019414-10150-25kuck.8vpfc/TheApp.app' exited with code 253'
+Build info: version: '3.12.0', revision: '7c6e0b3', time: '2018-05-08T14:04:26.12Z'
+System info: host: 'Matts-Macbook-Pro.local', ip: 'fe80:0:0:0:1d:9119:57ce:a63f%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.14.4', java.version: '10.0.2'
+Driver info: driver.version: IOSDriver
+remote stacktrace: UnknownError: An unknown server-side error occurred while processing the command. Original error: Could not install app: 'Command 'ios-deploy --id d1ca87cd071d01b631cc2d8105b676e05b1d16b2 --bundle /var/folders/jr/dqvctkx52ml_5f59dqvb3tpw0000gp/T/2019414-10150-25kuck.8vpfc/TheApp.app' exited with code 253'
+    at getResponseForW3CError (/Applications/Appium.app/Contents/Resources/app/node_modules/appium-base-driver/lib/protocol/errors.js:826:9)
+    at asyncHandler (/Applications/Appium.app/Contents/Resources/app/node_modules/appium-base-driver/lib/protocol/protocol.js:450:37)
+    at process._tickCallback (internal/process/next_tick.js:68:7)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:488)
+at org.openqa.selenium.remote.W3CHandshakeResponse.lambda$new$0(W3CHandshakeResponse.java:57)
+at org.openqa.selenium.remote.W3CHandshakeResponse.lambda$getResponseFunction$2(W3CHandshakeResponse.java:104)
+at org.openqa.selenium.remote.ProtocolHandshake.lambda$createSession$0(ProtocolHandshake.java:123)
+at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:195)
+at java.base/java.util.Spliterators$ArraySpliterator.tryAdvance(Spliterators.java:958)
+at java.base/java.util.stream.ReferencePipeline.forEachWithCancel(ReferencePipeline.java:127)
+at java.base/java.util.stream.AbstractPipeline.copyIntoWithCancel(AbstractPipeline.java:502)
+at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:488)
+at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:474)
+at java.base/java.util.stream.FindOps$FindOp.evaluateSequential(FindOps.java:150)
+at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+at java.base/java.util.stream.ReferencePipeline.findFirst(ReferencePipeline.java:543)
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:126)
+... 38 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.WebDriverException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- myTest -->
+        <test-method is-config="true" signature="uninstallApp()[pri:0, instance:AppiumTest@6236eb5f]" started-at="2019-05-14T16:23:37Z" name="uninstallApp" finished-at="2019-05-14T16:23:37Z" duration-ms="0" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- uninstallApp -->
+      </class> <!-- AppiumTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
